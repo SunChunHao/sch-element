@@ -1,14 +1,19 @@
 <template>
-  <component :is="props.tag" :ref="_ref" :type="tag === 'button' ? nativeType : void 0"
-    :disabled="disabled || loading ? true : void 0" class="sch-button" :class="{
-      [`sch-button-${type}`]: type,
-      [`sch-button-${size}`]: size,
-      'is-plain': plain,
-      'is-round': round,
-      'is-circle': circle,
-      'is-disabled': disabled,
-      'is-loading': loading
-    }">
+<component
+    :is="props.tag"
+    :type="tag === 'button' ? props.nativeType : void 0"
+    class="er-button"
+    :class="{
+      [`er-button--${props.size}`]: props.size,
+      [`er-button--${props.type}`]: props.type,
+      'is-plain': props.plain,
+      'is-round': props.round,
+      'is-circle': props.circle,
+      'is-loading': props.loading,
+      'is-disabled': props.disabled,
+    }"
+    :disabled="props.disabled || props.loading ? true : false"
+  >
     <slot></slot>
   </component>
 </template>
@@ -29,3 +34,6 @@ const slots = defineSlots();
 const _ref = ref<HTMLButtonElement>()
 
 </script>
+<style scoped>
+@import './style.css';
+</style>
