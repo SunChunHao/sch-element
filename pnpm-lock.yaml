@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@sch-element/components':
+        specifier: workspace:*
+        version: link:packages/components
       '@sch-element/hooks':
         specifier: workspace:*
         version: link:packages/hooks
@@ -111,6 +114,8 @@ importers:
       vue:
         specifier: ^3.4.27
         version: 3.4.27(typescript@5.4.5)
+
+  packages/play: {}
 
   packages/theme: {}
 

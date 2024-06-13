@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @sch-element/play dev",
     "docs:dev": "pnpm --filter @sch-element/docs dev",
     "docs:build": "pnpm --filter @sch-element/docs build",
-    "test": "pnpm --filter @sch-element/components test'"
+    "test": "pnpm --filter @sch-element/components test"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +32,7 @@
     "lodash-es": "^4.17.21",
     "vue": "^3.4.19",
     "sch-element": "workspace:*",
+    "@sch-element/components": "workspace:*",
     "@sch-element/hooks": "workspace:*",
     "@sch-element/utils": "workspace:*",
     "@sch-element/theme": "workspace:*"
