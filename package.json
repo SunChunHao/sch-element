@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @sch-element/play dev",
+    "story": "pnpm --filter @sch-element/play storybook",
     "docs:dev": "pnpm --filter @sch-element/docs dev",
     "docs:build": "pnpm --filter @sch-element/docs build",
     "test": "pnpm --filter @sch-element/components test"
